@@ -1,0 +1,105 @@
+//顶部出现消失,返回顶部
+
+/*window.onscroll=function (){
+    var t=document.body.scrollTop || document.documentElement.scrollTop;
+    var head = document.getElementById("head");
+    var menu = document.getElementById("menu");
+    var nav_bottom = document.getElementById("nav_bottom");
+    var backTop = document.getElementById("backTop");
+    if(t<30){
+        head.style.display="block";
+        menu.style.marginTop="-30px";
+        //nav_bottom.style.marginTop="180px";
+        backTop.style.display="none";
+    }else{
+        $(head).fadeOut('fast', function() {
+
+        });
+        // head.style.display="none";
+        menu.style.marginTop="0px";
+        //nav_bottom.style.marginTop="150px";
+        backTop.style.display="block";
+    };
+};*/
+//动态固定顶部元素
+var top_menu = $("#menu").offset().top;
+$(window).scroll(function() {
+if($(window).scrollTop() > top_menu){
+	$("#menu").css({"position":"fixed","top":"25px","z-index":"99999"});//开始固定
+}else{
+	$("#menu").css({"position":"static"});//释放固定
+}
+});
+
+//返回顶部
+var timer = null;
+backTop.onclick = function back(){
+cancelAnimationFrame(timer);
+timer = requestAnimationFrame(function fn(){
+var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+if(oTop > 0){
+document.body.scrollTop = document.documentElement.scrollTop = oTop - 30;
+timer = requestAnimationFrame(fn);
+}else{
+cancelAnimationFrame(timer);
+}
+});
+};
+
+//二级菜单
+$(function(){
+        $(".nav>li").hover(function(){
+            $(this).children('ul').stop(true,true).show(300);
+        },function(){
+            $(this).children('ul').stop(true,true).hide(300);
+        })
+    });
+//获取时间显示
+//var oTime=document.getElementById("time");
+// var d = new Date()
+//oTime.innerHTML=(Date());
+// console.log(d.getHours());
+
+
+//点击效果
+$(document).ready(function() {
+  $('.ripple-effect').rkmd_rippleEffect();
+});
+
+(function($) {
+  $.fn.rkmd_rippleEffect = function() {
+    var btn, self, ripple, size, rippleX, rippleY, eWidth, eHeight;
+
+    btn = $(this).not('[disabled], .disabled');
+
+    btn.on('mousedown', function(e) {
+      self = $(this);
+
+
+      if(e.button === 2) {
+        return false;
+      }
+
+      if(self.find('.ripple').length === 0) {
+        self.prepend('<span class="ripple"></span>');
+      }
+      ripple = self.find('.ripple');
+      ripple.removeClass('animated');
+
+      eWidth = self.outerWidth();
+      eHeight = self.outerHeight();
+      size = Math.max(eWidth, eHeight);
+      ripple.css({'width': size, 'height': size});
+
+      rippleX = parseInt(e.pageX - self.offset().left) - (size / 2)-20;
+      rippleY = parseInt(e.pageY - self.offset().top) - (size / 2);
+
+      ripple.css({ 'top': rippleY +'px', 'left': rippleX +'px' }).addClass('animated');
+
+      setTimeout(function() {
+        ripple.remove();
+      }, 800);
+
+    });
+  };
+}(jQuery));

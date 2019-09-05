@@ -1,0 +1,111 @@
+.L_main{
+    width: 300px;
+    height: 830px;
+    margin:30px auto;
+    border:1px solid #ffeacb;
+    position:relative;
+}
+.L_main .box {
+    width: 900px;
+    margin: 100px auto 0;
+    height: 34px;
+    position:absolute;
+    bottom:50px;
+    left:90px;
+}
+.L_main .page {
+    width: 700px;
+}
+
+.L_main .info {
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.L_main .fl {
+     float: left;
+}
+.L_main_head{
+    width:100%;
+    height: 35px;
+    background:url("../images/BR_head.png") no-repeat center/100% 100%;
+    position:relative;
+}
+.L_main_head .LM_head_left{
+    width: 20px;
+    height: 20px;
+    background:url("../images/BR_left.png") no-repeat center/100% 100%;
+    position:absolute;
+    left: 20px;
+    top: 8px;
+}
+.L_main_head span{
+    position:absolute;
+    top: 7px;
+    left: 60px;
+    font-size: 14px;
+}
+.L_main .L_main_mid{
+    width:100%;
+    height: 804px;
+}
+.L_main_mid .LM_mid_child{
+    width:90%;
+    height: 180px;
+    margin: 15px auto;
+}
+.LM_child_head{
+    width:100%;
+    height:30px;
+    background:#ddd;
+    position:relative;
+}
+ .child_head_left{
+    width: 18px;
+    height: 18px;
+    background:url("../images/child_head.png") no-repeat center/100% 100%;
+    position:absolute;
+    left: 20px;
+    top:5px;
+}
+.LM_child_head span{
+    position:absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 14px;
+    color:#8c1c3b;
+    font-weight: bold;
+}
+.LM_child_main{
+    width:90%;
+    height:120px;
+    margin:5px auto;
+}
+.LM_child_main ul{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+.LM_child_main ul li{
+    width:100%;
+    height:30px;
+    border-bottom:1px dashed #ccc;
+    margin-top:5px;
+    position:relative;
+}
+.LM_child_main ul li a{
+    text-decoration: none;
+    color:#a20807;
+    font-size: 13px;
+    position:absolute;
+    left:30px;
+}
+.LM_li_left{
+    position:absolute;
+    width: 18px;
+    height: 18px;
+    background:url("../images/li_left.png") no-repeat center/100% 100%;
+    top:0px;
+    left:0px;
+}

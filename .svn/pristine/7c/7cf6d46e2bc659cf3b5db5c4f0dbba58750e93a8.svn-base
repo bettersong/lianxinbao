@@ -1,0 +1,26 @@
+<div class="B_main_left">
+    <div class="BL_head"> <span>大数据监督</span> </div>
+    <div class="BL_one active ripple-effect ripple-red"><a href="/bigData/shiyongjiandu">实用监督功能</a></div>
+    <!--<div class="BL_two ripple-effect ripple-red"><a href="/bigData/shujudiaoyong">数据调用功能</a></div>-->
+    <ul id="accordion" class="accordion">
+      <li>
+        <div class="link ripple-effect ripple-red">2017年中国党内统计公报<span class="menu_more">☰</span></div>
+        <ul class="submenu">
+          <li><a href="">党员队伍情况</a></li>
+          <li><a href="">发展党员情况</a></li>
+          <li><a href="">党内表彰情况</a></li>
+          <li><a href="">申请入党情况</a></li>
+          <li><a href="">党组织情况</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="link ripple-effect ripple-red">2016年中国党内统计公报<span class="menu_more">☰</span></div>
+        <ul class="submenu">
+          <li><a href="">党员队伍情况</a></li>
+          <li><a href="">发展党员情况</a></li>
+          <li><a href="">党内表彰情况</a></li>
+          <li><a href="">申请入党情况</a></li>
+          <li><a href="">党组织情况</a></li>
+        </ul>
+      </li>
+    </ul>

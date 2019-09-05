@@ -1,0 +1,17 @@
+<?php 
+class LianzhengNewsController extends Controller
+{
+    // 该分类下的首页
+	public function catloglistImg()
+    {
+		$mysqlModel = new Model("lianzhenginfo");
+		$data['lzInfoType']=$_GET['type'];
+ 		$catlogListArr = $mysqlModel ->selectByCondition($data);
+		//print_r($lianzhengNews);
+		//设置变量，前端可用
+		$this->assign('catlogListArr', $catlogListArr);
+
+         
+    }
+	 
+}

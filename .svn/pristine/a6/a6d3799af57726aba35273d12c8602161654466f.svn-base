@@ -1,0 +1,125 @@
+<?php 
+/** 
+ *常量与配置信息
+*/
+//数据库连接配置
+/*define('DB_NAME', 'lianxinbao');//数据库名
+define('DB_USER', 'root');//账号
+define('DB_PASSWORD', '654321');//密码
+define('DB_HOST', 'localhost');
+
+
+
+//网站根URL
+define('APP_URL', 'http://localhost:8082');
+
+*/
+//设置网站分类目录
+$catlogArr = array(
+   "lianzhengNews"=>array(
+	  "name"=>"廉政信息",
+	  "url"=>"/lianzhengNews/lianzhengNews",
+	  "subnav"=>array(
+	  	 "lianzhengNews"=>array(
+			 "name"=>"廉政头条",
+			 "url"=>"/lianzhengNews/lianzhengNews",
+		 ),
+		 "rdgz"=>array(
+			 "name"=>"热点关注",
+			 "url"=>"/lianzhengNews/catloglistImg&type=rdgz",
+		 ),
+		 "zyxw"=>array(
+			 "name"=>"主要新闻",
+			 "url"=>"/lianzhengNews/catloglistImg&type=zyxw",
+		 ) 
+	  )
+  ),
+  "lianxinshalong"=>array(
+	  "name"=>"廉心沙龙",
+	  "url"=>"/lianxinshalong/catloglistVideo&type=lzgkk",
+	  "subnav"=>array(
+	  	 "lzgkk"=>array(
+			 "name"=>"廉政公开课",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=lzgkk",
+		 ),
+		 "sltw"=>array(
+			 "name"=>"实例提问",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=sltw",
+		 ),
+		 "hdjl"=>array(
+			 "name"=>"互动交流",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=hdjl",
+		 )
+		 ,
+		 "gjsy"=>array(
+			 "name"=>"国际视野",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=gjsy",
+		 )
+		 ,
+		 "ztsl"=>array(
+			 "name"=>"主题沙龙",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=ztsl",
+		 ) 
+	  )
+  ),
+  "lianxinjiangtang"=>array(
+	  "name"=>"廉心讲堂",
+	  "url"=>"/lianxinjiangtang/catloglistVideo&type=zjfc",
+	  "subnav"=>array(
+	  	 "zjfc"=>array(
+			 "name"=>"专家风采",
+			 "url"=>"/lianxinjiangtang/catloglistVideo&type=zjfc",
+		 ),
+		 "jszjxt"=>array(
+			 "name"=>"教授专家学堂",
+			 "url"=>"/lianxinjiangtang/catloglistVideo&type=jszjxt",
+		 ),
+		 "ptxsxt"=>array(
+			 "name"=>"普通学生学堂",
+			 "url"=>"/lianxinjiangtang/catloglistVideo&type=ptxsxt",
+		 )
+		 ,
+		 "jsbs"=>array(
+			 "name"=>"讲三本书",
+			 "url"=>"/lianxinjiangtang/catloglistVideo&type=jsbs",
+		 )
+	  )
+  ),
+  "jingzhongchangming"=>array(
+	  "name"=>"警钟长鸣",
+	  "url"=>"/jingzhongchangming/catloglistVideo&type=tbbg",
+	  "subnav"=>array(
+	  	 "tbbg"=>array(
+			 "name"=>"通报曝光",
+			 "url"=>"/jingzhongchangming/catloglistVideo&type=tbbg",
+		 ),
+		 "tszs"=>array(
+			 "name"=>"他山之石",
+			 "url"=>"/jingzhongchangming/catloglistVideo&type=tszs",
+		 )
+	  )
+  ),
+  "lianxinxianfeng"=>array(
+	  "name"=>"廉心先锋",
+	  "url"=>"/lianxinxianfeng/catloglistVideo&type=xfgs",
+	  "subnav"=>array(
+	  	 "xfgs"=>array(
+			 "name"=>"先锋故事",
+			 "url"=>"/lianxinxianfeng/catloglistVideo&type=xfgs",
+		 ),
+		 "xfwh"=>array(
+			 "name"=>"先锋文汇",
+			 "url"=>"/lianxinxianfeng/catloglistVideo&type=xfwh",
+		 ),
+		 "xflt"=>array(
+			 "name"=>"先锋论坛（观点）",
+			 "url"=>"/lianxinxianfeng/catloglistVideo&type=xflt",
+		 )
+		 ,
+		 "xjdxk"=>array(
+			 "name"=>"先进典型库",
+			 "url"=>"/lianxinxianfeng/catloglistVideo&type=xjdxk",
+		 )
+	  )
+  )
+);  

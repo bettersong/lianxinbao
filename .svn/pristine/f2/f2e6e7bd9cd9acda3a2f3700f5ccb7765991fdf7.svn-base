@@ -1,0 +1,36 @@
+<?php 
+/** 
+ *常量与配置信息
+*/
+//数据库连接配置
+define('DB_NAME', 'lianxinbao');//数据库名
+define('DB_USER', 'root');//账号
+define('DB_PASSWORD', '654321');//密码
+define('DB_HOST', '121.41.26.77:8803');//localhost
+
+
+
+//前端页面的网站根URL
+define('APP_URL', 'http://localhost:8082/');
+//后台管理的网站根URL
+define('ADMIN_URL', 'http://localhost:8085/');
+
+
+
+/*$catlogArr = array(
+   "lianzhengNews"=>array(
+	   "lzgkk"=>"廉政公开课",
+	   "sltw"=>"实例提问",
+	   "hdjl"=>"互动交流",
+	   "gjsy"=>"国际视野",
+	   "ztsl"=>"主题沙龙" 
+  )
+); */
+$catlogArr = array(
+			
+		   "lzgkk"=>"廉政公开课",
+		   "sltw"=>"实例提问",
+		   "hdjl"=>"互动交流",
+		   "gjsy"=>"国际视野",
+		   "ztsl"=>"主题沙龙" 
+	   ); 

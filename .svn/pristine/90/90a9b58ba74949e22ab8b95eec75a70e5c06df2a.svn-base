@@ -1,0 +1,66 @@
+<?php 
+/** 
+ *常量与配置信息
+*/
+//数据库连接配置
+/*define('DB_NAME', 'lianxinbao');//数据库名
+define('DB_USER', 'root');//账号
+define('DB_PASSWORD', '654321');//密码
+define('DB_HOST', 'localhost');
+
+
+
+//网站根URL
+define('APP_URL', 'http://localhost:8082');
+
+*/
+//设置网站分类目录
+$catlogArr = array(
+   "lianzhengNews"=>array(
+	  "name"=>"廉政信息",
+	  "url"=>"/lianzhengNews/lianzhengNews",
+	  "subnav"=>array(
+	  	 "lianzhengNews"=>array(
+			 "name"=>"廉政头条",
+			 "url"=>"/lianzhengNews/lianzhengNews",
+		 ),
+		 "rdgz"=>array(
+			 "name"=>"热点关注",
+			 "url"=>"/lianzhengNews/catloglistImg&type=rdgz",
+		 ),
+		 "zyxw"=>array(
+			 "name"=>"廉政头条",
+			 "url"=>"/lianzhengNews/catloglistImg&type=zyxw",
+		 ) 
+	  )
+  ),
+  "lianxinshalong"=>array(
+	  "name"=>"廉心沙龙",
+	  "url"=>"/lianxinshalong/catloglistVideo&type=lzgkk",
+	  "subnav"=>array(
+	  	 "lzgkk"=>array(
+			 "name"=>"廉政公开课",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=lzgkk",
+		 ),
+		 "sltw"=>array(
+			 "name"=>"实例提问",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=sltw",
+		 ),
+		 "hdjl"=>array(
+			 "name"=>"互动交流",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=hdjl",
+		 )
+		 ,
+		 "gjsy"=>array(
+			 "name"=>"国际视野",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=gjsy",
+		 )
+		 ,
+		 "ztsl"=>array(
+			 "name"=>"主题沙龙",
+			 "url"=>"/lianxinshalong/catloglistVideo&type=ztsl",
+		 ) 
+	  )
+  ) 
+);  
+  

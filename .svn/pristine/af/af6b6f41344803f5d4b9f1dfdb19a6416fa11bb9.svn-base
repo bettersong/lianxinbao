@@ -1,0 +1,438 @@
+/*
+* @Author: Marte
+* @Date:   2018-08-03 15:03:14
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-08-28 10:06:46
+*/
+
+/*大数据监督 css*/
+body ul{margin:0px;padding:0px}
+.B_main{
+    width:1024px;
+    height: 720px;
+    margin:30px auto;
+    position:relative;
+}
+.B_main_ZJ{
+    width:1024px;
+    height: 720px;
+    margin:30px auto;
+    position:relative;
+}
+.B_main_left{
+    width: 255px;
+    height:240px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border:1px solid #ffeacb;
+    display: inline-block;
+    vertical-align: middle;
+}
+.B_main_left .BL_head{
+    width:100%;
+    height: 40px;
+    background:url("../images/BL_bg.png") no-repeat center/100% 100%;
+}
+.BL_head span{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color:#ad2026;
+    line-height: 40px;
+    margin-left: 30px;
+}
+.B_main_left .BL_one,.B_main_left .BL_two{
+   width:90%;
+   height: 40px;
+   background:url("../images/BL_mid.png") no-repeat center/100% 100%;
+   margin:20px auto;
+   cursor:pointer;
+  -webkit-transition: all .3s ease-out;
+  transition: all .4s ease-out;
+}
+.BL_one span,.BL_two span{
+    text-decoration:none;
+    display: block;
+    font-size: 18px;
+    color:#ad2026;
+    line-height: 40px;
+    margin-left: 50px;
+}
+.ripple-effect {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  vertical-align: middle;
+  z-index: 1;
+}
+.ripple-effect .ripple {
+  display: block;
+  position: absolute;
+  //border-radius: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+}
+.ripple-effect .animated {
+  -webkit-animation: ripple 0.6s linear;
+  animation: ripple 0.3s linear;
+}
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+}
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+}
+.ripple-effect.ripple-red .ripple {
+  width:300px;
+  background: rgba(244, 67, 54, 0.725) !important;
+}
+
+.BL_one a,.BL_two a{
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    color: #ad2026;
+    line-height: 40px;
+    padding-left: 40px;
+}
+.B_main_right{
+    width: 720px;
+    height: 710px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    border:1px solid #ffeacb;
+}
+.BR_head{
+    width:100%;
+    height: 40px;
+    background:url("../images/BR_head.png") no-repeat center/100% 100%;
+    position:relative;
+}
+.BR_head .BR_head_left{
+    width: 20px;
+    height: 20px;
+    background:url("../images/BR_left.png") no-repeat center/100% 100%;
+    position:absolute;
+    left: 20px;
+    top:9px;
+}
+.BR_head span{
+    position:absolute;
+    top: 7px;
+    left: 60px;
+    font-size: 16px;
+}
+.right1_one{
+    width: 400px;
+    height: 360px;
+    margin:20px auto;
+    border: 1px solid #EEE;
+    position:relative;
+}
+.right1_one span{height: 35px;display: block;font-size:16px;font-weight:bold;line-height: 35px;text-align:center;background: #FBFBFB;}
+.right1_one .min_box{
+    width:90px;
+    height:50px;
+    position:absolute;
+    top:50px;
+    right:5px;
+}
+.min_box .min_box_one{
+    width:20px;
+    height:20px;
+    background:#0b70ba;
+}
+.min_box .min_box_two{
+    width:20px;
+    height:20px;
+    background:#b9f03e;
+}
+.right1_one .min_box ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+.right1_one .min_box ul li{
+    width:100%;
+    height:20px;
+    margin-top:5px;
+    background:#ccc;
+}
+.min_box ul li span{
+    width: 70px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: -20px;
+    font-size: 12px;
+    line-height: 20px
+}
+.right1_one_canvas{
+    display: block;
+    width: 270px;
+    height: 270px;
+    margin: 30px auto;
+}
+.right2_main{
+    width:100%;
+
+}
+.right3_main{
+    width:200px;
+    height:300px;
+    background:#ff0;
+}
+
+/*廉心沙龙  css*/
+.shalong_main{
+    width:90%;
+    height:92%;
+    margin:0 auto;
+}
+.shalong_main ul{
+    list-style: none;
+    padding:0px;
+}
+.shalong_main ul li{
+    width:100%;
+    height:150px;
+    border-bottom: 2px dashed #ccc;
+    margin-top:10px;
+    position:relative;
+}
+.SL_main_left{
+    width:40%;
+    height:90%;
+    background:url("../images/xijinping.png") no-repeat center/100% 100%;
+    position:absolute;
+    left:15px;
+}
+.SL_main_left img:hover{
+    transform:rotate(360deg);
+}
+.SL_main_left img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 105px;
+    top: 43px;
+    transition:1s;
+}
+#video{
+    width:260px;
+    height:135px;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.SL_main_right{
+    width:50%;
+    height:90%;
+    position:absolute;
+    right:15px;
+}
+.SL_main_right p{
+    position:absolute;
+    font-size:15px;
+    color:#999;
+    line-height:25px;
+}
+.SL_main_right span{
+    position:absolute;
+    bottom:0px;
+    font-size:15px;
+    color:#999;
+}
+.right2_main ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+
+}
+.right2_main ul li{
+    /*width:680px;
+    height:40px;
+    border-bottom:1px dashed #999;*/
+    margin:5px auto;
+    position:relative;
+}
+.right2_main .right2_main_dot{
+    float:left;
+    width:10px;
+    height:10px;
+    border-radius:100%;
+    background:#eee;
+    margin-top: 15px;
+}
+.right2_main ul li a{
+    width: 600px;
+    position: absolute;
+    left: 25px;
+    line-height:40px;
+    text-decoration: none;
+    font-size: 16px;
+    color:#333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.right2_main ul li:hover a{
+    color:rgb(31, 73, 125);
+}
+.right2_main ul li:hover .right2_main_dot{
+    background:rgb(31, 73, 125);
+}
+
+
+/*专家介绍 css*/
+.ZJ_main{
+    width:90%;
+    height: 650px;
+    margin:10px auto;
+}
+.ZJ_main ul{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+
+}
+.ZJ_main ul li{
+    width: 100%;
+    margin-top:15px;
+    position:relative;
+    border-bottom:1px dashed #ccc;
+}
+.ZJ_main ul li .ZJ_img img{
+    width:150px;
+    height:200px;
+}
+.ZJ_main ul li .ZJ_text{
+    width: 440px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 15px;
+    line-height: 28px;
+    color:#999;
+}
+/*三级菜单  css*/
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #b63b4d;
+    text-decoration: none;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 80px;
+ }
+
+h1 a {
+    color: #c12c42;
+    font-size: 16px;
+ }
+
+ .accordion {
+    width: 96%;
+    max-width: 300px;
+    margin: 5px auto;
+    background: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding:0px;
+ }
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 50px;
+    color:#ad2026;
+    font-size: 14px;
+    background: url(../images/BL_mid.png) no-repeat center/100% 100%;
+    margin-top:20px;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordion li.open .link {
+    color: #b63b4d;
+}
+
+.accordion li.open i {
+    color: #b63b4d;
+}
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* Submenu*/
+ .submenu {
+    display: none;
+    background: #fdf1d7;
+    font-size: 14px;
+ }
+
+ .submenu li {
+    border-bottom: 1px solid #daa32c;
+ }
+
+ .submenu a {
+    display: block;
+    text-decoration: none;
+    color: #b63b4d;
+    padding: 12px;
+    text-align:center;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+    background: #b63b4d;
+    color: #FFF;
+ }

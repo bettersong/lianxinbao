@@ -1,0 +1,24 @@
+<?php 
+class AdminSpecialColumnController extends Controller
+{
+    // 该分类下的首页
+	public function index()
+    {
+		//获取发表类型,因为前台写好了下拉框的内容，所以这两行代码不起作用
+		// $mysqlModel = new PushGongbaoModel("gongbao_type");
+ 		// $gongbaoType = $mysqlModel ->selectAll();
+
+ 		//设置显示的年份
+		$year =  date('Y');
+ 		$yearArr[20] = array();		 
+        for($i=0; $i<sizeof($yearArr); $i++){
+			
+			$yearArr[$i] = $year-$i;
+		}
+		//设置变量，前端可用
+		$this->assign('yearArr', $yearArr);
+
+         
+    }
+	 
+}

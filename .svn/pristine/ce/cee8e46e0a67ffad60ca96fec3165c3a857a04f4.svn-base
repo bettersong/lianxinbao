@@ -1,0 +1,93 @@
+<?php
+class Core
+{
+    function run()
+    {
+        //echo ' 333333 ';
+		spl_autoload_register(array($this, 'loadClass'));//自动加载函数，当我们实例化一个未定义的类时，就会触发此函数
+
+        $this->setReporting();
+
+        $this->removeMagicQuotes();
+
+        $this->unregisterGlobals();
+
+        $this->Route();
+    }
+    function Route()
+    {
+        $s = 'Index';
+        $t = 'index';
+        if (!empty($_GET['url'])) {
+            $u = $_GET['url'];
+            $v = explode('/', $u);
+            $s = ucfirst($v[0]);
+            array_shift($v);
+            $t = empty($v[0]) ? 'index' : $v[0];
+            array_shift($v);
+            $w = empty($v) ? array() : $v;
+        }
+        $w = empty($w) ? array() : $w;
+        $x = $s . 'Controller';
+        if ((int) method_exists($x, $t)) {
+            $y = new $x($s, $t);
+            call_user_func_array(array($y, $t), $w);
+        } else {
+            $z = new View($s, $t);
+            $z->render();
+        }
+    }
+    function setReporting()
+    {
+        if (APP_DEBUG === true) {
+            error_reporting(E_ALL);
+            ini_set('display_errors', 'On');
+        } else {
+            error_reporting(E_ALL);
+            ini_set('display_errors', 'Off');
+            ini_set('log_errors', 'On');
+            ini_set('error_log', RUNTIME_PATH . 'logs/error.log');
+        }
+    }
+    function stripSlashesDeep($aa)
+    {
+        $aa = is_array($aa) ? array_map('stripSlashesDeep', $aa) : stripslashes($aa);
+        return $aa;
+    }
+    function removeMagicQuotes()
+    {
+        if (get_magic_quotes_gpc()) {
+            $_GET = stripSlashesDeep($_GET);
+            $_POST = stripSlashesDeep($_POST);
+            $_COOKIE = stripSlashesDeep($_COOKIE);
+            $_SESSION = stripSlashesDeep($_SESSION);
+        }
+    }
+    function unregisterGlobals()
+    {
+        if (ini_get('register_globals')) {
+            $bb = array('_SESSION', '_POST', '_GET', '_COOKIE', '_REQUEST', '_SERVER', '_ENV', '_FILES');
+            foreach ($bb as $aa) {
+                foreach ($GLOBALS[$aa] as $cc => $dd) {
+                    if ($dd === $GLOBALS[$cc]) {
+                        unset($GLOBALS[$cc]);
+                    }
+                }
+            }
+        }
+    }
+    static function loadClass($ee)
+    {
+        $ff = FRAME_PATH . $ee . '.class.php';
+        $gg = APP_PATH . 'application/controllers/' . $ee . '.class.php';
+        $hh = APP_PATH . 'application/models/' . $ee . '.class.php';
+        if (file_exists($ff)) {
+            include $ff;
+        } elseif (file_exists($gg)) {
+            include $gg;
+        } elseif (file_exists($hh)) {
+            include $hh;
+        } else {
+        }
+    }
+}

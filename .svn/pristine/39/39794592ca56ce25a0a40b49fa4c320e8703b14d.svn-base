@@ -1,0 +1,16 @@
+<?php 
+class PushLzInfoController extends Controller
+{
+    // 该分类下的首页
+	public function index()
+    {
+		$mysqlModel = new Model("lzInfo");
+ 		$lzInfo = $mysqlModel ->selectAll();
+
+		//设置变量，前端可用
+		$this->assign('lzInfo', $lzInfo);
+
+         
+    }
+	 
+}

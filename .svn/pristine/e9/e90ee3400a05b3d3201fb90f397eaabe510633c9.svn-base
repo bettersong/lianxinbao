@@ -1,0 +1,228 @@
+.L_main{
+    width:1024px;
+    height: 830px;
+    margin: 15px auto 30px;
+    position:relative;
+}
+.L_main_left{
+    width: 255px;
+    height:240px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border:1px solid #ffeacb;
+    display: inline-block;
+    vertical-align: middle;
+}
+.L_main_left .BL_head{
+    width:100%;
+    height: 40px;
+    background:url("../images/BL_bg.png") no-repeat center/100% 100%;
+}
+.L_main .box {
+    width: 900px;
+    margin: 100px auto 0;
+    height: 34px;
+    position:absolute;
+    bottom:50px;
+    left:90px;
+}
+.L_main .page {
+    width: 700px;
+}
+
+.L_main .info {
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.L_main .fl {
+     float: left;
+}
+.L_main_head{
+    width:100%;
+    height: 40px;
+    background:url("../images/BR_head.png") no-repeat center/100% 100%;
+    position:relative;
+}
+.L_main_head .LM_head_left{
+    width: 20px;
+    height: 20px;
+    background:url("../images/BR_left.png") no-repeat center/100% 100%;
+    position:absolute;
+    left: 20px;
+    top:9px;
+}
+.L_main_head span{
+    position:absolute;
+    top: 7px;
+    left: 60px;
+    font-size: 16px;
+}
+.L_main .L_main_mid{
+    width:100%;
+    height: 804px;
+}
+.L_main_mid .LM_mid_child{
+    width:90%;
+    height: 180px;
+    margin: 15px auto;
+}
+.LM_child_head{
+    width:100%;
+    height:30px;
+    background:#ddd;
+    position:relative;
+}
+ .child_head_left{
+    width: 20px;
+    height: 20px;
+    background:url("../images/child_head.png") no-repeat center/100% 100%;
+    position:absolute;
+    left: 20px;
+    top:5px;
+}
+.LM_child_head span{
+    position:absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 16px;
+    color:#8c1c3b;
+    font-weight: bold;
+}
+.LM_child_main{
+    width:90%;
+    height:120px;
+    margin:5px auto;
+}
+.LM_child_main ul{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+.LM_child_main ul li{
+    width:100%;
+    height:30px;
+    border-bottom:1px dashed #ccc;
+    margin-top:5px;
+    position:relative;
+}
+.LM_child_main ul li a{
+    text-decoration: none;
+    color:#a20807;
+    font-size:15px;
+    position:absolute;
+    left:30px;
+}
+.LM_li_left{
+    position:absolute;
+    width:20px;
+    height:20px;
+    background:url("../images/li_left.png") no-repeat center/100% 100%;
+    top:0px;
+    left:0px;
+}
+
+
+.BL_head span{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color:#ad2026;
+    line-height: 40px;
+    margin-left: 30px;
+}
+.L_main_left .BL_one,.L_main_left .BL_two,.L_main_left .BL_three,.L_main_left .BL_four{
+   width:85%;
+   height: 40px;
+   background:url("../images/BL_mid.png") no-repeat center/100% 100%;
+   margin:20px auto;
+   cursor:pointer;
+  -webkit-transition: all .3s ease-out;
+  transition: all .4s ease-out;
+}
+.BL_one span,.BL_two span,.BL_three span,.BL_four span{
+    text-decoration:none;
+    display: block;
+    font-size: 18px;
+    color:#ad2026;
+    line-height: 40px;
+    margin-left: 50px;
+}
+.ripple-effect {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  vertical-align: middle;
+  z-index: 1;
+}
+.ripple-effect .ripple {
+  display: block;
+  position: absolute;
+  //border-radius: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+}
+.ripple-effect .animated {
+  -webkit-animation: ripple 0.6s linear;
+  animation: ripple 0.3s linear;
+}
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+}
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+}
+.ripple-effect.ripple-red .ripple {
+  width:300px;
+  background: rgba(244, 67, 54, 0.725) !important;
+}
+
+.BL_one a,.BL_two a,.BL_three a,.BL_four a{
+    width:100%;
+    text-decoration:none;
+    display: block;
+    font-size: 15px;
+    color:#ad2026;
+    line-height: 40px;
+    padding-left: 50px;
+}
+.L_main .L_main_right{
+    width: 720px;
+    height: 830px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    border:1px solid #ffeacb;
+}
+.BR_head{
+    width:100%;
+    height: 40px;
+    background:url("../images/BR_head.png") no-repeat center/100% 100%;
+    position:relative;
+}
+.BR_head .BR_head_left{
+    width: 20px;
+    height: 20px;
+    background:url("../images/BR_left.png") no-repeat center/100% 100%;
+    position:absolute;
+    left: 20px;
+    top:9px;
+}
+.BR_head span{
+    position:absolute;
+    top: 7px;
+    left: 60px;
+    font-size: 16px;
+}

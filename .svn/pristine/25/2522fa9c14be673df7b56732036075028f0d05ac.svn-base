@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>廉心宝</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="/public/css/style<?=$_m?>.css?v=<?=rand(1,999999) ?>" type="text/css" />
+    <link rel="stylesheet" href="/public/css/lianxinjiangtang<?=$_m?>.css?v=<?=rand(1,999999) ?>" type="text/css" />
+</head>
+<body>
+
+<!--头部-->
+       <?php include APP_PATH."/application/views/header".$_m.".php"; //包含公共的头部 ?>
+
+
+       <!--中间部分main-->
+       <div class="B_main">
+             <div class="B_main_left">
+                  <div class="BL_head">
+                      <span>廉心讲堂</span>
+                  </div>
+                  <div class="BL_one ripple-effect ripple-red"><a href="/lianxinjiangtang/professorExpert">教授专家讲堂</a></div>
+                  <div class="BL_two active ripple-effect ripple-red"><a href="/lianxinjiangtang/otherExpert">其他专家讲堂</a></div>
+                  <div class="BL_two ripple-effect ripple-red"><a href="/lianxinjiangtang/liuwangnan">刘汪楠系列著作</a></div>
+                  <div class="BL_two ripple-effect ripple-red"><a href="/lianxinjiangtang/lianxinAfter">廉心观后感</a></div>
+             </div>
+             <div class="B_main_right">
+                 <div class="BR_head">
+                     <div class="BR_head_left"></div>
+                     <span>你当前的位置：廉心讲堂-其他专家讲堂</span>
+                 </div>
+                 <div class="shalong_main">
+                     <ul>
+                        <li>
+                            <div class="SL_main_left">
+                                <video id="video" width="260" height="135" src="/public/video/demo2.mp4"></video>
+                                <img id="player" src="/public/images/player.png" alt="">
+                            </div>
+                            <div class="SL_main_right">
+                                <p>2017年7月30日，中共中央总书记、国家主席、中央军委主席习近平在朱日和检阅部队并发表重要讲话。</p>
+                                <span>2017-7-30</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="SL_main_left">
+                                <img src="/public/images/player.png" alt="">
+                            </div>
+                            <div class="SL_main_right">
+                                <p>2017年7月30日，中共中央总书记、国家主席、中央军委主席习近平在朱日和检阅部队并发表重要讲话。</p>
+                                <span>2017-7-30</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="SL_main_left">
+                                <img src="/public/images/player.png" alt="">
+                            </div>
+                            <div class="SL_main_right">
+                                <p>2017年7月30日，中共中央总书记、国家主席、中央军委主席习近平在朱日和检阅部队并发表重要讲话。</p>
+                                <span>2017-7-30</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="SL_main_left">
+                                <img src="/public/images/player.png" alt="">
+                            </div>
+                            <div class="SL_main_right">
+                                <p>2017年7月30日，中共中央总书记、国家主席、中央军委主席习近平在朱日和检阅部队并发表重要讲话。</p>
+                                <span>2017-7-30</span>
+                            </div>
+                        </li>
+                     </ul>
+                 </div>
+             </div>
+
+        </div>
+<div class="backTop" id="backTop"></div>
+
+
+

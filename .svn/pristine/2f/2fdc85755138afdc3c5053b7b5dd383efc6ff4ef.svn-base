@@ -1,0 +1,118 @@
+#right2_main_content{
+    padding: 10px 40px 40px;
+}
+#right2_main_content .userInfo{
+    margin:10px 0;
+    color:#555;
+}
+.oldPassword input,.newPassword input,.confirmPassword input,.oldPhone input,.newPhone input{
+    width: 232px;
+    height: 35px;
+    margin-top: 10px;
+    padding: 0px 15px;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 6px;
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 14px;
+    background: transparent;
+    margin-right: 20px;
+}
+.confirmChange input[type=button]{
+     cursor:pointer;
+    width: 264px;
+    padding: 8px 8px;
+    margin-top: 10px;
+    background:#ef4300;
+    border:1px solid #ff730e;
+    font-weight:700;
+    color:#fff;
+    /* font-size: 14px; */
+    font-family: heiti;
+    text-shadow:0 1px 2px rgba(0, 0, 0, .1);
+}
+#right2_main_content div span.tip{
+    color: red;
+    display: none;
+}
+
+#right2_main_content span.action{
+    
+cursor: pointer;
+    
+/* border: 1px solid #ddd; */
+    
+padding: 3px 8px;
+    
+margin: 0 2px 0 0;
+    
+border-radius: 3px;
+    
+background-color: #3385ff;
+    
+color: #fff;
+}
+#right2_main_content span.action.disabled{
+    background-color: #ddd;
+    color:#888;
+}
+#right2_main_content span.action:hover{
+	text-decoration:underline;
+    
+}
+#right2_main_content span.add
+{
+    width: 44px;
+    margin: 9px 0 0 277px;
+    display: block;
+    text-align: center;
+}
+#right2_main_content #tip {
+   margin-top: 20px;
+}
+#right2_main_content #tip span{
+    color: gray;
+    display: block;
+}
+.table{
+    width: 100%;
+    border: 1px solid #eee;
+    border-right: 0;
+}
+.table{
+    width: 100%;
+}
+.table th{
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+    padding: 5px 2px;
+    background: #3385ff;
+    color: #fff;
+    font-weight: 500;
+}
+.table tr td{
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    border-left: 0;
+    font-size: 14px;
+    padding: 5px 5px;
+    text-align: center;
+}
+.table tr td.disabled{
+    background: #f1f1f1;
+}
+.table tr td input[type=text],.table tr td input[type=password]{
+    width: 100%;
+    border:none;
+    text-align: center;
+}
+.table tr td:nth-child(1){
+    width: 30px;
+    text-align: center;
+}
+#oldPasswordTip{
+    display: none;
+}
+#newPasswordTip1,#newPasswordTip2{
+    display: none;
+}

@@ -1,0 +1,79 @@
+<?php 
+class BigDataController extends Controller
+{
+    //该控制器的共同函数
+	public function common(){
+		
+ 		$mysqlModel = new BigDataModel("gongbao");
+ 		$gongBaoYearArr = $mysqlModel ->getGongBaoYear();
+		
+		//print_r($gongBaoYearArr);
+		$this->assign('gongBaoYearArr', $gongBaoYearArr);
+		
+	}
+	// 
+	public function dangneigongbao_detail()
+    {
+		
+		//按年份和类型检索公报
+		$mysqlModel = new BigDataModel("gongbao");
+		$data['gongbaoYear'] = $_GET['year'];
+		$data['gongbaoType'] = $_GET['type'];
+		$gongBaoArr = $mysqlModel ->selectByCondition($data);
+		//print_r($gongBaoArr);
+		//设置变量
+		$this->assign('gongBaoArr', $gongBaoArr);
+	}
+	public function dangneigongbao()
+    {
+
+		//获取公报的年份集，一共左侧使用
+		
+		//***请设置：id和内容的字段名称
+		/*$fieldName_id = "lzInfoId";       
+		$fieldName_title = "lzInfoTitle";
+		$fieldName_content = "lzInfoContent";
+		$fieldName_pushTime = "lzInfoTime";
+		$maxLen = 60;//截取的内容长度
+		//end 设置
+		
+		$mysqlModel = new Model("lianzhenginfo");
+		$data['lzInfoType']=$_GET['type'];
+ 		$catlogListArr = $mysqlModel ->selectByCondition($data);
+		
+		//遍历从数据库中获取的数据，修改和设置一下信息
+		foreach($catlogListArr as $index => $value){
+			//##设置id和title
+		    $catlogListArr[$index]['id'] = $value[$fieldName_id];
+			$catlogListArr[$index]['title'] = $value[$fieldName_title];
+			$catlogListArr[$index]['pushtime'] = $value[$fieldName_pushTime];
+			
+ 			//print_r($match);
+            $text =  strip_tags($value[$fieldName_content]);//$match[0];
+			//print_r($match);
+            //var_dump($match[1]);
+            //if($text==""){
+				//截取主要内容
+				//$text = $value[$fieldName_content];
+				//php正则删除img标签的方法示例
+				//$text= preg_replace('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i', '', $text);//
+				//截取中文字符串
+				if(mb_strlen($text, 'utf8') > $maxLen) {        
+					$text =  mb_substr($text, 0, $maxLen, 'utf8').'......';  
+				} 
+			//}
+			//设置主要内容为截取后的内容		
+		    $catlogListArr[$index]['content'] = $text;
+			unset($catlogListArr[$index][$fieldName_content]);
+		}
+		
+		print_r($catlogListArr);
+		//设置变量，前端可用
+		$this->assign('catlogListArr', $catlogListArr);*/
+
+         
+    }
+	
+   
+	 
+}

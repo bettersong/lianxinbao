@@ -1,0 +1,17 @@
+<?php 
+class LianzhengNewsController extends Controller
+{
+    // 该分类下的首页
+	public function news()
+    {
+		$mysqlModel = new Model("lianzhenginfo");
+		$data['lzInfoType']=$_GET['type'];
+ 		$lianzhengNews = $mysqlModel ->selectByCondition($data);
+		//print_r($lianzhengNews);
+		//设置变量，前端可用
+		$this->assign('lianzhengNews', $lianzhengNews);
+
+         
+    }
+	 
+}

@@ -1,0 +1,11 @@
+<div class="bottom_banner">
+  <div class="bottom_banner_inner"></div>
+</div>
+<div class="footer"> <span>廉心宝--廉心教育工程</span>
+  <div class="footer_ask">
+    <p>© 2018 江西南昌.  赣ICP备 XXXXXXXX号-XX</p>
+  </div>
+</div>
+<script src="/public/js/unslider.min.js"></script>
+<script src="/public/js/main.js?v=<?=rand(1,999999) ?>"></script>
+

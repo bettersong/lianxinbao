@@ -1,0 +1,57 @@
+<?php
+/**
+ *视图基类
+ *
+ * @author zhouhuixiang
+ * @version 1.0
+*/
+class View
+{
+    protected $variables = array();
+    protected $_controller;
+    protected $_action;
+ 
+    function __construct($controller, $action)
+    {
+ 		$this->_controller = $controller;
+        $this->_action = $action;
+    }
+    /** 分配变量 **/
+    function assign($name, $value)
+    {
+        $this->variables[$name] = $value;
+    }
+    /** 渲染显示 **/
+    function render()
+    {
+ 		$action = $this->_action;
+		$controller = $this->_controller;
+		$controllerNameForView=lcfirst($this->_controller);//strtolower($this->_controller);//视图文件夹大小写敏感，全部用小写。
+		extract($this->variables);
+        $defaultHeader = APP_PATH . 'application/views/header.php';//默认头部
+        $defaultFooter = APP_PATH . 'application/views/footer.php';//默认底部
+        $controllerHeader = APP_PATH . 'application/views/' . $controllerNameForView . '/header.php';//自定义头部
+        $controllerFooter = APP_PATH . 'application/views/' . $controllerNameForView . '/footer.php';//自定义底部
+        //页头文件
+       /* if (file_exists($controllerHeader)) {
+            include ($controllerHeader);
+        } else {
+            include ($defaultHeader);
+        }*/
+        //页内容文件
+		$pagefile_Path = APP_PATH . 'application/views/' . $controllerNameForView . '/' . $this->_action . '.php';
+		//echo  $pagefile_Path.'<br>';
+        if (file_exists($pagefile_Path)) {
+			include ($pagefile_Path);
+		}else{
+			echo '<br><a href="/" >返回首页</a><br>';
+			echo '<br>页面不存在：'.$pagefile_Path.'<br><br>';
+		}
+        //页脚文件
+        if (file_exists($controllerFooter)) {
+            include ($controllerFooter);
+        } else {
+            include ($defaultFooter);
+        }
+    }
+}

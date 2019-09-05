@@ -1,0 +1,107 @@
+<script src="/public/js/jquery-1.8.3.min.js"></script>
+<div class="header">
+  <div class="head" id="head">
+    <div class="h-logo" ></div>
+    <div class="h-inner" ></div>
+  </div>
+  <div id="menu">
+    <ul class="nav">
+      <li class="nav_li"><a href="/index/index">首页</a> </li>
+      <li class="nav_li"><a href="javascript:void">大数据监督</a>
+         <ul class="sub-nav" style="width:180px">
+          <li style="width:100%"><a href="/bigData/shiyongjiandu" style="width:100%">实用监督功能</a></li>
+          <!--<li style="width:100%"><a href="/bigData/shujudiaoyong" style="width:100%">数据调用功能</a></li>-->
+          <li style="width:100%"><a href="/bigData/2017news" style="width:100%">2017年中国共产党党内统计公报</a></li>
+          <li style="width:100%"><a href="/bigData/2016news" style="width:100%">2016年中国共产党党内统计公报</a></li>
+        </ul>
+      </li>
+      <li class="nav_li"><a href="javascript:void">廉政信息</a>
+         <ul class="sub-nav">
+          <li><a href="/lianzhengNews/lianzhengNews">廉政头条</a></li>
+          <li><a href="/lianzhengNews/catloglistImg&type=rdgz">热点关注</a></li>
+          <li><a href="/lianzhengNews/catloglistImg&type=zyxw">主要新闻</a></li>
+        </ul>
+      </li>
+      <li class="nav_li"><a href="javascript:void">廉心沙龙</a>
+        <ul class="sub-nav">
+          <li><a href="/lianxinshalong/catloglistVideo&type=lzgkk">廉政公开课</a></li>
+          <li><a href="/lianxinshalong/catloglistVideo&type=sltw">实例提问</a></li>
+          <li><a href="/lianxinshalong/catloglistVideo&type=hdjl">互动交流</a></li>
+          <li><a href="/lianxinshalong/catloglistVideo&type=gjsy">国际视野</a></li>
+          <li><a href="/lianxinshalong/catloglistVideo&type=ztsl">主题沙龙</a></li>
+        </ul>
+      </li>
+      <li class="nav_li"><a href="javascript:void">廉心讲堂</a>
+        <ul class="sub-nav">
+          <li><a href="/lianxinjiangtang/expertAppearance">专家风采</a></li>
+          <li><a href="/lianxinjiangtang/catloglistVideo&type=jszjxt">教授专家学堂</a></li>
+          <li><a href="/lianxinjiangtang/catloglistVideo&type=ptxsxt">普通学生学堂</a></li>
+          <li><a href="/lianxinjiangtang/catloglistVideo&type=jsbs">讲三本书</a></li>
+        </ul>
+      </li>
+
+      <li class="nav_li"><a href="javascript:void">廉政考试</a>
+        <!-- <ul class="sub-nav">
+          <li><a href="/lianzhengExam/examination">廉政知识理论考试</a></li>
+          <li><a href="/lianzhengExam/results">考试成绩查看</a></li>
+        </ul> -->
+      </li>
+      <li class="nav_li"><a href="javascript:void">廉政娱乐测试</a>
+        <ul class="sub-nav">
+          <li style="width:160px"><a href="/yuleTest/politicalFate" style="width:150px">职业前程（安全指数）测试</a></li>
+
+        </ul>
+      </li>
+      <li class="nav_li"><a href="javascript:void">学习资料</a>
+        <ul class="sub-nav">
+          <li><a href="/study/shijiuda">十九大精神</a></li>
+          <li><a href="/study/zhengcefagui">政策法规</a></li>
+          <li><a href="/study/zhengzhililun">政治理论</a></li>
+          <li><a href="/study/wenhuasuyang">文化素养</a></li>
+          <li><a href="/study/hongseshuyuan">红色书院</a></li>
+          <li><a href="/study/hongseyingyuan">红色影院</a></li>
+        </ul>
+      </li>
+      <li class="nav_li"><a href="javascript:void">专题栏目</a>
+        <ul class="sub-nav">
+          <li style="width:150px"><a href="/zhuantilanmu/studyShijiuda" style="width:135px">学习宣传贯彻十九大精神</a></li>
+
+        </ul>
+      </li>
+      <li class="nav_li"><a href="javascript:void">警钟长鸣</a>
+        <ul class="sub-nav">
+          <li><a href="/jingzhongchangming/tongbaobaoguang">通报曝光</a></li>
+          <li><a href="/jingzhongchangming/tashanzhishi">他山之石</a></li>
+
+        </ul>
+      </li>
+      <li class="nav_li" style="border:none"><a href="javascript:void">廉心先锋</a>
+        <ul class="sub-nav">
+          <li><a href="/lianxinxianfeng/xianfenggushi">先锋故事</a></li>
+          <li><a href="/lianxinxianfeng/xianfengwenhui">先锋文汇</a></li>
+          <li><a href="/lianxinxianfeng/xianfengluntan">先锋论坛（观点）</a></li>
+          <li><a href="/lianxinxianfeng/xianfengdianxingku">先进典型库</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="/public/js/main.js?<?=rand(1,99999)?>"></script>
+<script>
+//1417/337=clientW/headH
+/*var clientW = window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;
+var headH =  clientW*337/1417;
+$("#head").height(headH);
+alert(headH);*/
+
+</script>
+<!--<div style="clear:both;height:150px;">&nbsp;</div>-->
+<!--<div class="nav_bottom" id="nav_bottom">
+  <div class="nav_bottom_left"> <span>现在是：</span>
+    <p id="time"></p>
+  </div>
+  <div class="nav_bottom_right">
+    <input type="text" class="btn">
+    <div class="search"><img src="/public/images/search.png" width="30px" height="30px"></div>
+  </div>
+</div>-->

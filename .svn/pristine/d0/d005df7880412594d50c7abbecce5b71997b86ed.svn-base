@@ -1,0 +1,34 @@
+<?php 
+class BigDataController extends Controller
+{
+    //该控制器的共同函数
+	public function common(){
+		
+ 		$mysqlModel = new BigDataModel("gongbao");
+ 		$gongBaoYearArr = $mysqlModel ->getGongBaoYear();
+		
+		//print_r($gongBaoYearArr);
+		$this->assign('gongBaoYearArr', $gongBaoYearArr);
+		
+	}
+	// 
+	public function dangneigongbao_detail()
+    {
+		
+		//按年份和类型检索公报
+		$mysqlModel = new BigDataModel("gongbao");
+		$data['gongbaoYear'] = $_GET['year'];
+		$data['gongbaoType'] = $_GET['type'];
+		$gongBaoArr = $mysqlModel ->selectByCondition($data);
+		 //print_r($gongBaoArr);
+		//设置变量
+		$this->assign('gongBaoArr', $gongBaoArr);
+	}
+	public function dangneigongbao()
+    {
+
+    }
+	
+   
+	 
+}

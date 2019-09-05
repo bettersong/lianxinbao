@@ -1,0 +1,51 @@
+<?php 
+
+ 
+
+class LianxinjiangtangController extends Controller
+{
+    //公共函数
+	public function common()
+    {
+		 
+	   //print_r($catlogTypeArr);
+	   //$this->assign('catlogArr', $catlogArr);
+	}
+	
+	// 分类页
+	public function expertAppearance()
+    {
+		
+		//首页的沙龙
+		$mysqlModel_jiangtang = new Model("expertinfopush");
+		$data_shalong="";//["lianxinshalongType"]='lzgkk';
+ 	    $jiangtangArr = $mysqlModel_jiangtang ->selectByCondition($data_shalong," order by expertInfoPushTime desc limit 8");
+	   $maxLen = 200;
+	   foreach($jiangtangArr as $index => $value){
+		   
+       		$content =  $value['expertInfoPushContent'];
+			
+			preg_match ('/\<img.*src="(.*)"/U',$content,$match);//preg_match('/<img src="(.*?)"/',$content,$match);
+			$thumbnail = $match[1];
+			if( strpos($thumbnail,"http")!==false ) $jiangtangArr[$index]['thumbnail'] = $thumbnail.'?3333';
+			else $jiangtangArr[$index]['thumbnail'] = ADMIN_URL.$thumbnail.'?asdfasdfasdf';
+			
+		    
+			$content =  strip_tags($content);
+			//截取中文字符串
+			if(mb_strlen($content, 'utf8') > $maxLen) {        
+				$content =  mb_substr($content, 0, $maxLen, 'utf8').'......';  
+			} 
+			$jiangtangArr[$index]['expertInfoPushContent'] = $content;
+	   }
+		//print_r($jiangtangArr);
+		//设置变量，前端可用
+		$this->assign('jiangtangArr', $jiangtangArr);
+
+         
+    }
+	
+    
+	
+	 
+}

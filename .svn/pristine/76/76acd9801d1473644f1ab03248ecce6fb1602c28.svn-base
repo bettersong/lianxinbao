@@ -1,0 +1,14 @@
+<?php 
+/** 
+ *常量与配置信息
+*/
+//数据库连接配置
+define('DB_NAME', 'lianxinbao');//数据库名
+define('DB_USER', 'root');//账号
+define('DB_PASSWORD', '654321');//密码
+define('DB_HOST', 'localhost');
+
+
+
+//网站根URL
+define('APP_URL', 'http://localhost:8082');

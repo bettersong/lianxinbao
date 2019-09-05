@@ -1,0 +1,62 @@
+//顶部出现消失,返回顶部
+
+window.onscroll=function (){
+    var t=document.body.scrollTop || document.documentElement.scrollTop;
+    var head = document.getElementById("head");
+    var menu = document.getElementById("menu");
+    var nav_bottom = document.getElementById("nav_bottom");
+    var backTop = document.getElementById("backTop");
+    if(t<100){
+        head.style.display="block";
+        menu.style.marginTop="-30px";
+        nav_bottom.style.marginTop="180px";
+        backTop.style.display="none";
+    }else{
+        head.style.display="none";
+        menu.style.marginTop="0px";
+        nav_bottom.style.marginTop="150px";
+        backTop.style.display="block";
+    };
+};
+var timer = null;
+backTop.onclick = function back(){
+cancelAnimationFrame(timer);
+timer = requestAnimationFrame(function fn(){
+var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+if(oTop > 0){
+document.body.scrollTop = document.documentElement.scrollTop = oTop - 30;
+timer = requestAnimationFrame(fn);
+}else{
+cancelAnimationFrame(timer);
+}
+});
+};
+//轮播图
+$(document).ready(function(e) {
+    var progress = $(".progress"),li_width = $("#b04 li").length;
+    var unslider04 = $('#b04').unslider({
+        dots: true,
+        complete:function(index){
+            progress.animate({"width":(100/li_width)*(index+1)+"%"});
+        }
+    }),
+
+    data04 = unslider04.data('unslider');
+    $('.unslider-arrow04').click(function() {
+        var fn = this.className.split(' ')[1];
+        data04[fn]();
+    });
+});
+//二级菜单
+$(function(){
+        $(".nav>li").hover(function(){
+            $(this).children('ul').stop(true,true).show(300);
+        },function(){
+            $(this).children('ul').stop(true,true).hide(300);
+        })
+    });
+//获取时间显示
+var oTime=document.getElementById("time");
+// var d = new Date()
+oTime.innerHTML=(Date());
+// console.log(d.getHours());

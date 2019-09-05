@@ -1,0 +1,14 @@
+<ul>
+  <?php foreach($catlogListArr as $index => $value){?>
+  <li class="catimgBox">
+  	<a href="detailText&type=<?=$_GET['type']?>&id=<?=$value['id']?>" target="_blank">
+        <div class="SL_main_left"><img src="<?=$value['thumbnail']?>" /></div>
+        <div class="SL_main_right">
+          <div class="title">【<?=$value['title']?>】</div>
+          <div class="content"><?=$value['content']?></div>
+          <div class="pushtime"><?=$value['pushtime']?></div>
+        </div>
+    </a>
+  </li>
+  <?php }?>
+</ul>

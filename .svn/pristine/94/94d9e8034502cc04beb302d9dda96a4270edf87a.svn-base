@@ -1,0 +1,47 @@
+<div class="B_main_left" style="height:470px">
+                  <div class="BL_head">
+                      <span>学习资料</span>
+                  </div>
+                  <ul id="accordion" class="accordion">
+    <li>
+      <div class="link ripple-effect ripple-red active">十九大精神<span class="menu_more">☰</span></div>
+      <ul class="submenu">
+        <li><a href="shijiuda">十九大报告</a></li>
+        <li><a href="">十九大重要文件</a></li>
+        <li><a href="">十九大报告解读</a></li>
+        <li><a href="">十九届一中全会公报（二中、三中）</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="link ripple-effect ripple-red">政策法规<span class="menu_more">☰</span></div>
+      <ul class="submenu">
+        <li><a href="zhengcefagui">党内法规制度</a></li>
+        <li><a href="">国家法律法规</a></li>
+        <li><a href="">党务工作实务</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="link ripple-effect ripple-red">政治理论<span class="menu_more">☰</span></div>
+      <ul class="submenu">
+        <li><a href="">马克思相关（《马克思是对的》《不朽的马克思》）</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="link ripple-effect ripple-red">文化素养<span class="menu_more">☰</span></div>
+      <ul class="submenu">
+        <li><a href="">中国传统文化</a></li>
+        <li><a href="">儒家文化</a></li>
+        <li><a href="">国学</a></li>
+        <li><a href="">传统礼法</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="link ripple-effect ripple-red">红色书院</div>
+
+    </li>
+    <li>
+      <div class="link ripple-effect ripple-red">红色影院</div>
+
+    </li>
+    </ul>
+             </div>

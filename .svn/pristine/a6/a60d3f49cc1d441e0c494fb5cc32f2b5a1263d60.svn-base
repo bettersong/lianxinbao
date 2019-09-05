@@ -1,0 +1,220 @@
+/*
+* @Author: Marte
+* @Date:   2018-08-03 15:03:14
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-08-05 15:14:25
+*/
+
+/*大数据监督 css*/
+.B_main{
+    width:70%;
+    height: 720px;
+    margin:30px auto;
+    position:relative;
+}
+.B_main .B_main_left{
+    width: 255px;
+    height:240px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border:1px solid #ffeacb;
+}
+.B_main_left .BL_head{
+    width:100%;
+    height: 40px;
+    background:url("../images/BL_bg.png") no-repeat center/100% 100%;
+}
+ .BL_head span{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color:#ad2026;
+    line-height: 40px;
+    margin-left: 30px;
+}
+.B_main_left .BL_one,.B_main_left .BL_two{
+   width:85%;
+   height: 40px;
+   background:url("../images/BL_mid.png") no-repeat center/100% 100%;
+   margin:20px auto;
+   cursor:pointer;
+}
+.BL_one span,.BL_two span{
+    text-decoration:none;
+    display: block;
+    font-size: 18px;
+    color:#ad2026;
+    line-height: 40px;
+    margin-left: 50px;
+}
+.BL_one a,.BL_two a{
+    text-decoration:none;
+    display: block;
+    font-size: 18px;
+    color:#ad2026;
+    line-height: 40px;
+    margin-left: 50px;
+}
+.B_main .B_main_right{
+    width: 670px;
+    height: 710px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    border:1px solid #ffeacb;
+}
+.BR_head{
+    width:100%;
+    height: 40px;
+    background:url("../images/BR_head.png") no-repeat center/100% 100%;
+    position:relative;
+}
+.BR_head .BR_head_left{
+    width: 20px;
+    height: 20px;
+    background:url("../images/BR_left.png") no-repeat center/100% 100%;
+    position:absolute;
+    left: 20px;
+    top:9px;
+}
+.BR_head span{
+    position:absolute;
+    top: 7px;
+    left: 60px;
+    font-size: 16px;
+}
+.right1_one{
+    width: 400px;
+    height: 360px;
+    margin:20px auto;
+    border: 1px solid #EEE;
+    position:relative;
+}
+.right1_one span{height: 35px;display: block;font-size:16px;font-weight:bold;line-height: 35px;text-align:center;background: #FBFBFB;}
+.right1_one .min_box{
+    width:90px;
+    height:50px;
+    position:absolute;
+    top:50px;
+    right:5px;
+}
+.min_box .min_box_one{
+    width:20px;
+    height:20px;
+    background:#0b70ba;
+}
+.min_box .min_box_two{
+    width:20px;
+    height:20px;
+    background:#b9f03e;
+}
+.right1_one .min_box ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+.right1_one .min_box ul li{
+    width:100%;
+    height:20px;
+    margin-top:5px;
+    background:#ccc;
+}
+.min_box ul li span{
+    width: 70px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: -20px;
+    font-size: 12px;
+    line-height: 20px
+}
+.right1_one_canvas{
+    display: block;
+    width: 270px;
+    height: 270px;
+    margin: 30px auto;
+}
+.right2_main{
+    width:200px;
+    height:300px;
+    background:#ccc;
+}
+.right3_main{
+    width:200px;
+    height:300px;
+    background:#ff0;
+}
+
+/*廉心沙龙  css*/
+.shalong_main{
+    width:90%;
+    height:92%;
+    margin:0 auto;
+}
+.shalong_main ul{
+    list-style: none;
+    padding:0px;
+}
+.shalong_main ul li{
+    width:100%;
+    height:150px;
+    border-bottom: 2px dashed #ccc;
+    margin-top:10px;
+    position:relative;
+}
+.SL_main_left{
+    width:40%;
+    height:90%;
+    background:url("../images/xijinping.png") no-repeat center/100% 100%;
+    position:absolute;
+    left:15px;
+}
+.SL_main_right{
+    width:50%;
+    height:90%;
+    position:absolute;
+    right:15px;
+}
+.SL_main_right p{
+    position:absolute;
+    font-size:15px;
+    color:#999;
+    line-height:25px;
+}
+.SL_main_right span{
+    position:absolute;
+    bottom:0px;
+    font-size:15px;
+    color:#999;
+}
+
+/*专家介绍 css*/
+.ZJ_main{
+    width:90%;
+    height: 650px;
+    margin:10px auto;
+}
+.ZJ_main ul{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+
+}
+.ZJ_main ul li{
+    width: 100%;
+    margin-top:15px;
+    position:relative;
+    border-bottom:1px dashed #ccc;
+}
+.ZJ_main ul li .ZJ_img img{
+    width:150px;
+    height:200px;
+}
+.ZJ_main ul li .ZJ_text{
+    width: 440px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 16px;
+    line-height: 28px;
+}

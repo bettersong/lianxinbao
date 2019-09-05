@@ -1,0 +1,19 @@
+
+<div class="B_main_left">
+    <div class="BL_head"> <span>大数据监督</span> </div>
+    <div class="BL_one active ripple-effect ripple-red"><a href="/bigData/shiyongjiandu">实用监督功能</a></div>
+    <!--<div class="BL_two ripple-effect ripple-red"><a href="/bigData/shujudiaoyong">数据调用功能</a></div>-->
+    <ul id="accordion" class="accordion">
+    <?php foreach($gongBaoYearArr as $value){?>
+      <li>
+        <div class="link ripple-effect ripple-red"><?=$value['gongbaoYear']?>年中国党内统计公报<span class="menu_more">☰</span></div>
+        <ul class="submenu">
+          <li><a href="dangneigongbao_detail&year=2018&type=dydwqk">党员队伍情况</a></li>
+          <li><a href="dangneigongbao_detail&year=2018&type=fzdyqk">发展党员情况</a></li>
+          <li><a href="dangneigongbao_detail&year=2018&type=dnbzqk">党内表彰情况</a></li>
+          <li><a href="dangneigongbao_detail&year=2018&type=sqrdqk">申请入党情况</a></li>
+          <li><a href="dangneigongbao_detail&year=2018&type=dzzqk">党组织情况</a></li>
+        </ul>
+      </li>
+    <?php }?>
+    </ul>
